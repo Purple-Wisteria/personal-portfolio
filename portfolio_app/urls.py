@@ -21,7 +21,7 @@ from portfolio import views
 from django.urls import include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),    # enables the admin site app on the /admin/ url directory, check the 'INSTALLED_APPS' variable in the settings.py
     path('', views.home, name='home'),
     path('blog/', include('blog.urls')),
 ]

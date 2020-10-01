@@ -35,7 +35,7 @@
 						<div class="inner">
 							<h1 class="major">Blog Posts</h1>
 							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
-							<h5>Total Number of Blog {{  blogs.count }} post{{blogs.count|pluralize}}</h5>
+							<h5>Total Number of Blog {{  blogs.count }} post{{ blogs.count|pluralize }}</h5>
 							{% for blog in blogs %}
 							<a href="{% url 'blog:detail' blog.id  %}" ><h3>{{ blog.title }}</h3></a>
 							<h5>{{ blog.date|date:'M D Y'|upper }} </h5>
